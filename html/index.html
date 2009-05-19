@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>zoomtabs</title>
+
+		<link rel="stylesheet" href="stylesheets/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script src="javascripts/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.zoomtabs.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function () {
+				
+				$('.zoomoutmenu.three').zoomtabs({
+					zoomPercent : 100,
+					speed: 500,
+					easing: 'easeOutElastic'
+				});
+				
+				$('.zoomoutmenu.two').zoomtabs({
+					zoomPercent : 50,
+					speed: 1000,
+				});
+				
+				$('.zoomoutmenu.one').zoomtabs({
+					zoomPercent : 15,
+					speed: 500,
+					easing: 'easeOutExpo'
+				});
+				
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<h1 id="pagetitle">jQuery Plugin: <span>zoomtabs</span></h1>
+			
+			<h2>Description</h2>
+			<p>
+				The jQuery <span>zoomtabs</span> plugin is an enhancement of the
+				plugin demonstrated by Remy Sharp on his blog
+				<a href='http://jqueryfordesigners.com'>jQuery For Designers</a>.
+			</p>
+			
+			<p>
+				Here, I have expanded on some of the functionality and also made
+				a few minor tweaks that will allow a more streamlined implementation.
+				The goal for this plugin is to take an set of images and display
+				them in a menu that when hovered will zoom the image out and zoom the
+				menu in. This effect mimics a flash implementation that was seen
+				<a href='http://www.bbc.co.uk/radio1'>here</a>.
+			</p>
+			
+			<h2>Options</h2>
+			<p>
+				<table>
+					<thead>
+						<tr>
+							<th>name</th>
+							<th>description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>zoomPercent</td>
+							<td>The amount of zoom that is applied to the image.</td>
+						</tr>
+						<tr>
+							<td>speed</td>
+							<td>
+								The speed at which the menu is shown and the 
+								image is zoomed.
+							</td>
+						</tr>
+						<tr>
+							<td>easing</td>
+							<td>
+								This plugin relies on the jquery.easing plugin.
+								For this reason you may use any of the easing
+								definitions that are defined there.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+			
+			<h2>Examples</h2>
+			<div class="zoomoutmenu one">
+				<ul class="tabs">
+					<li><a href="#one">one</a></li>
+					<li><a href="#two">two</a></li>
+					<li><a href="#three">three</a></li>
+					<li><a href="#four">four</a></li>
+					<li><a href="#five">five</a></li>
+				</ul>
+				
+				<div class="panels">
+					<div id="one" class="panel one">
+						<h2 class="label">
+							20x200
+						</h2>
+					</div>
+					<div id="two" class="panel two">
+						<h2 class="label">
+							KISSmetrics
+						</h2>
+					</div>
+					<div id="three" class="panel three">
+						<h2 class="label">
+							MobileMe
+						</h2>
+					</div>
+					<div id="four" class="panel four">
+						<h2 class="label">
+							Scrapblog
+						</h2>
+					</div>
+					<div id="five" class="panel five">
+						<h2 class="label">
+							Straw Poll
+						</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="zoomoutmenu two">
+				<ul class="tabs">
+					<li><a href="#six">one</a></li>
+					<li><a href="#seven">two</a></li>
+					<li><a href="#eight">three</a></li>
+					<li><a href="#nine">four</a></li>
+					<li><a href="#ten">five</a></li>
+				</ul>
+				
+				<div class="panels">
+					<div id="six" class="panel one">
+						<h2 class="label">
+							20x200
+						</h2>
+					</div>
+					<div id="seven" class="panel two">
+						<h2 class="label">
+							KISSmetrics
+						</h2>
+					</div>
+					<div id="eight" class="panel three">
+						<h2 class="label">
+							MobileMe
+						</h2>
+					</div>
+					<div id="nine" class="panel four">
+						<h2 class="label">
+							Scrapblog
+						</h2>
+					</div>
+					<div id="ten" class="panel five">
+						<h2 class="label">
+							Straw Poll
+						</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="zoomoutmenu three">
+				<ul class="tabs">
+					<li><a href="#eleven">one</a></li>
+					<li><a href="#twelve">two</a></li>
+					<li><a href="#thirteen">three</a></li>
+					<li><a href="#fourteen">four</a></li>
+					<li><a href="#fifteen">five</a></li>
+				</ul>
+				
+				<div class="panels">
+					<div id="eleven" class="panel one">
+						<h2 class="label">
+							20x200
+						</h2>
+					</div>
+					<div id="twelve" class="panel two">
+						<h2 class="label">
+							KISSmetrics
+						</h2>
+					</div>
+					<div id="thirteen" class="panel three">
+						<h2 class="label">
+							MobileMe
+						</h2>
+					</div>
+					<div id="fourteen" class="panel four">
+						<h2 class="label">
+							Scrapblog
+						</h2>
+					</div>
+					<div id="fifteen" class="panel five">
+						<h2 class="label">
+							Straw Poll
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

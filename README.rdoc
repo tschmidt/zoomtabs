@@ -1,0 +1,15 @@
+= jQuery Plugin: zoomtabs
+
+The jQuery zoomtabs plugin is an enhancement of the plugin demonstrated by Remy
+Sharp on his blog jQuery For Designers.
+
+Here, I have expanded on some of the functionality and also made a few minor
+tweaks that will allow a more streamlined implementation. The goal for this
+plugin is to take an set of images and display them in a menu that when hovered
+will zoom the image out and zoom the menu in. This effect mimics a flash
+implementation that was seen at http://www.bbc.co.uk/radio1/.
+
+== Usage
+
+To see this in action, download the source files and open the html/index.html
+file in a browser of your choice.
